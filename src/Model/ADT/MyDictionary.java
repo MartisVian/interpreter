@@ -22,8 +22,15 @@ public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
         String returnString = "";
         for(HashMap.Entry<T1, T2> e : dictionary.entrySet())
         {
-            returnString = returnString + "Key: " + e.getKey().toString() + ", Value: " + e.getValue().toString() + "\n";
+            returnString = returnString + "Key: " + e.getKey().toString() + ", Value: " + e.getValue().toString();
         }
+        if(!returnString.equals("")) {
+            StringBuilder sb = new StringBuilder();
+            sb.append("\n\t");
+            sb.append(returnString);
+            return sb.toString();
+        }
+
         return returnString;
     }
 

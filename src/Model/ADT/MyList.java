@@ -20,10 +20,13 @@ public class MyList<T> implements MyIList<T> {
 
     public String toStr() {
         StringBuilder sb = new StringBuilder();
+
         for(T element : list)
         {
-            sb.append(element.toString()).append('\n');
+            sb.append(element.toString());
         }
+        if(sb.length() == 0)
+            sb.insert(0, "\n\t");
         return sb.toString();
     }
 }

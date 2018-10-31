@@ -30,6 +30,7 @@ public class PrgState {
 
     public String toStr()
     {
-        return "ExeStack: " +  exeStack.toStr() + "\nSymTable: "+ symTable.toStr() + "\nOutput: "+ out.toStr();
+        return "ExeStack: " +  exeStack.toStr() + "\nSymTable: "+ symTable.toStr() + "\nOutput: "+ out.toStr()
+                + "\n---------------------------------------------------\n";
     }
 }

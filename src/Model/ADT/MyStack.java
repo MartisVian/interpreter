@@ -24,8 +24,12 @@ public class MyStack<T> implements MyIStack<T> {
         StringBuilder sb = new StringBuilder();
         for(T el : stack)
         {
-            sb.append(el.toString()).append('\n');
+            sb.append(el.toString());
         }
+
+        if(sb.length() != 0)
+            sb.insert(0,"\n\t");
+
         return sb.toString();
     }
 }
