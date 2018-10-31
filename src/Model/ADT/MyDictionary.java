@@ -1,5 +1,5 @@
 package Model.ADT;
-
+import Exception.MyException;
 import java.util.HashMap;
 
 public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
@@ -19,11 +19,19 @@ public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
     }
 
     public String toStr() {
-        return null;
+        String returnString = "";
+        for(HashMap.Entry<T1, T2> e : dictionary.entrySet())
+        {
+            returnString = returnString + "Key: " + e.getKey().toString() + ", Value: " + e.getValue().toString() + "\n";
+        }
+        return returnString;
     }
 
-    public T2 lookUp(String id) {
-        return dictionary.get(id);
+    public T2 lookUp(String id) throws MyException {
+        if(dictionary.get(id) != null)
+            return dictionary.get(id);
+        else
+            throw new MyException("Id not found.");
     }
 
 

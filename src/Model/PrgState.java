@@ -10,15 +10,26 @@ public class PrgState {
     private MyIDictionary<String, Integer> symTable;
     private MyIList<Integer> out;
 
-    PrgState(MyIStack<IStatement> stack, MyIDictionary<String,Integer> symtbl, MyIList<Integer> output, IStatement prg){
+    public PrgState(MyIStack<IStatement> stack, MyIDictionary<String,Integer> symtbl, MyIList<Integer> output, IStatement prg){
         exeStack=stack;
         symTable=symtbl;
         out = output;
         stack.push(prg);
     }
 
-    String toStr()
+    public MyIStack<IStatement> getStack(){
+        return exeStack;
+    }
+
+    public MyIList<Integer> getOut(){
+        return out;
+    }
+    public MyIDictionary<String, Integer> getSymTable(){
+        return symTable;
+    }
+
+    public String toStr()
     {
-        return exeStack.toStr() + '\n' + symTable.toStr() + '\n' + out.toStr();
+        return "ExeStack: " +  exeStack.toStr() + "\nSymTable: "+ symTable.toStr() + "\nOutput: "+ out.toStr();
     }
 }

@@ -1,11 +1,12 @@
 package Model.ADT;
 
 import java.util.Stack;
+import Model.Expression.*;
 
 public class MyStack<T> implements MyIStack<T> {
-    Stack<T> stack;
+    private Stack<T> stack;
 
-    public MyStack(){ stack = new Stack<T>(); }
+    public MyStack(){ stack = new Stack<>(); }
 
     public T pop() {
         return stack.pop();
@@ -13,6 +14,10 @@ public class MyStack<T> implements MyIStack<T> {
 
     public void push(T element) {
         stack.push(element);
+    }
+
+    public boolean isEmpty() {
+        return stack.isEmpty();
     }
 
     public String toStr(){
