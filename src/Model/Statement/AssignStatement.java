@@ -26,10 +26,7 @@ public class AssignStatement implements IStatement {
 
         int val = expression.eval(symTable);
 
-        if (symTable.isDefined(id))
-            symTable.update(id, val);
-        else
-            symTable.add(id,val);
+        symTable.add(id,val);
 
         return state;
     }
