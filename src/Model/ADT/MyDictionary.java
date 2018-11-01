@@ -17,24 +17,23 @@ public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
     }
 
     public String toStr() {
-        String returnString = "";
+        StringBuilder returnString = new StringBuilder();
         for(HashMap.Entry<T1, T2> e : dictionary.entrySet())
         {
-            returnString = returnString + "Key: " + e.getKey().toString() + ", Value: " + e.getValue().toString();
+            returnString.append("Key: ").append(e.getKey().toString()).append(", Value: ").append(e.getValue().toString());
         }
-        if(!returnString.equals("")) {
-            String sb = "\n\t" +
+        if(!returnString.toString().equals("")) {
+            return "\n\t" +
                     returnString;
-            return sb;
         }
 
-        return returnString;
+        return returnString.toString();
     }
 
     public T2 lookUp(String id) throws MyException {
-        if(dictionary.get(id) != null)
+        if(dictionary.get(id) != null) {
             return dictionary.get(id);
-        else
+        } else
             throw new MyException("Id not found.");
     }
 

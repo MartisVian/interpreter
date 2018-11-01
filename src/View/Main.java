@@ -8,7 +8,6 @@ import Model.PrgState;
 import Model.Statement.*;
 import Repository.Repository;
 import Controller.Controller;
-
 import javax.print.DocFlavor;
 
 public class Main {
@@ -16,7 +15,7 @@ public class Main {
     private static Repository myRepository = new Repository();
     private static Controller myController = new Controller(myRepository);
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         IStatement originalProgram = new IfStatement(new ConstExpression(10), new CompStatement(new AssignStatement("v",
                 new ConstExpression(5)), new PrintStatement(new ArithExpression('/', new VarExpression("v"),
                 new ConstExpression(3)))), new PrintStatement(new ConstExpression(100)));
@@ -29,6 +28,20 @@ public class Main {
 
         myController.addProgram(myPrgState);
         myController.allStep();
-
+//        try {
+//            System.out.println(myPrgState.toStr());
+//            myController.oneStep(myPrgState);
+//            System.out.println(myPrgState.toStr());
+//            myController.oneStep(myPrgState);
+//            System.out.println(myPrgState.toStr());
+//            myController.oneStep(myPrgState);
+//            System.out.println(myPrgState.toStr());
+//            myController.oneStep(myPrgState);
+//        }
+//        catch(Exception e)
+//        {
+//            System.out.println(e.getMessage());
+//            System.exit(0);
+//        }
     }
 }
