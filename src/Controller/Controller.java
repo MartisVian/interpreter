@@ -8,9 +8,7 @@ import Repository.Repository;
 import Exception.MyException;
 
 public class Controller {
-    IRepository myRepository;
-
-    Controller() {}
+    private IRepository myRepository;
 
     public Controller(Repository myRepository) {
         this.myRepository = myRepository;
@@ -34,7 +32,7 @@ public class Controller {
     public void allStep(){
         PrgState prg = myRepository.currentState();
         try{
-            while(true){
+            while(prg.getStack() != null){
                 System.out.println(prg.toStr());
                 oneStep(prg);
             }

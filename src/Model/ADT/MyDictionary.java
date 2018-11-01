@@ -12,7 +12,7 @@ public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
     }
 
 
-    public boolean isDefined(String id) {
+    public boolean isDefined(T1 id) {
         return dictionary.get(id) != null;
     }
 
