@@ -22,7 +22,8 @@ public class Main {
         MyIStack<IStatement> exeStack = new MyStack<>();
         MyIDictionary<String, Integer> symTable = new MyDictionary<>();
         MyIList<Integer> out = new MyList<>();
-        PrgState myPrgState = new PrgState(exeStack, symTable, out, originalProgram);
+        FileTable fileTable = new FileTable();
+        PrgState myPrgState = new PrgState(exeStack, symTable, out, fileTable, originalProgram);
 
 
         myController.addProgram(myPrgState);

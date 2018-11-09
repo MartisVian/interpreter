@@ -10,8 +10,8 @@ import Exception.MyException;
 public class Controller {
     private IRepository myRepository;
 
-    public Controller(Repository myRepository) {
-        this.myRepository = myRepository;
+    public Controller(Repository myRepo) {
+        myRepository = myRepo;
     }
 
     public void addProgram(PrgState newPrg) {
@@ -33,7 +33,9 @@ public class Controller {
         PrgState prg = myRepository.currentState();
         try{
             while(prg.getStack() != null){
+                myRepository.addPrg(prg);
                 System.out.println(prg.toStr());
+                myRepository.logPrgStateExec();
                 oneStep(prg);
             }
         }

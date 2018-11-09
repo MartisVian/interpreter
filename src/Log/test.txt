@@ -1,0 +1,210 @@
+ExeStack: 
+	IF(10) THEN((v=5;print(v/3)))ELSE(print(100))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	(v=5;print(v/3))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)v=5
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)
+SymTable: 
+	Key: v, Value: 5
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+SymTable: 
+	Key: v, Value: 5
+Output: 1
+---------------------------------------------------
+ExeStack: 
+	IF(10) THEN((v=5;print(v/3)))ELSE(print(100))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	(v=5;print(v/3))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)v=5
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)
+SymTable: 
+	Key: v, Value: 5
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+SymTable: 
+	Key: v, Value: 5
+Output: 1
+---------------------------------------------------
+ExeStack: 
+	IF(10) THEN((v=5;print(v/3)))ELSE(print(100))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	(v=5;print(v/3))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)v=5
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)
+SymTable: 
+	Key: v, Value: 5
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+SymTable: 
+	Key: v, Value: 5
+Output: 1
+---------------------------------------------------
+ExeStack: 
+	IF(10) THEN((v=5;print(v/3)))ELSE(print(100))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	(v=5;print(v/3))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)v=5
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)
+SymTable: 
+	Key: v, Value: 5
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+SymTable: 
+	Key: v, Value: 5
+Output: 1
+---------------------------------------------------
+ExeStack: 
+	IF(10) THEN((v=5;print(v/3)))ELSE(print(100))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	(v=5;print(v/3))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)v=5
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)
+SymTable: 
+	Key: v, Value: 5
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+SymTable: 
+	Key: v, Value: 5
+Output: 1
+---------------------------------------------------
+ExeStack: 
+	IF(10) THEN((v=5;print(v/3)))ELSE(print(100))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	(v=5;print(v/3))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)v=5
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)
+SymTable: 
+	Key: v, Value: 5
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+SymTable: 
+	Key: v, Value: 5
+Output: 1
+---------------------------------------------------
+ExeStack: 
+	IF(10) THEN((v=5;print(v/3)))ELSE(print(100))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	(v=5;print(v/3))
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)v=5
+SymTable: 
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+	print(v/3)
+SymTable: 
+	Key: v, Value: 5
+Output: 
+	
+---------------------------------------------------
+ExeStack: 
+SymTable: 
+	Key: v, Value: 5
+Output: 1
+---------------------------------------------------

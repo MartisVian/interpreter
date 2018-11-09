@@ -14,6 +14,11 @@ public class MyList<T> implements MyIList<T> {
         list.add(v);
     }
 
+    public T getLast()
+    {
+        return list.peek();
+    }
+
     public T pop() {
         return list.poll();
     }
